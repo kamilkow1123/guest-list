@@ -1,0 +1,54 @@
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.form__input {
+    width: 100%;
+    margin: 0.5rem;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    background: #e7e7e7;
+}
+
+.form__textarea {
+    width: 100%;
+    margin: 0.5rem;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    background: #e7e7e7;
+    resize: vertical;
+    min-height: 50px;
+    max-height: 200px;
+}
+
+.form__button {
+    width: 100%;
+    border: 3px solid #7e65c2;
+    outline: none;
+    padding: 1rem;
+    background: #7e65c2;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.4s ease-in-out;
+}
+
+.form__button:hover {
+    background: #fff;
+    color: #7e65c2;
+}
+
+@media screen and (min-width: 768px) {
+    .form__input,
+    .form__textarea,
+    .form__button {
+        width: 60%;
+    }
+}
